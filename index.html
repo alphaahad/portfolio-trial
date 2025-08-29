@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahad Nadeem - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.75rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #00d4ff;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ahad Nadeem</h1>
+    <p>AI/ML Enthusiast | Developer | Innovator</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am Ahad Nadeem, an AI/ML enthusiast with strong Python skills and hands-on
+      experience in building intelligent systems. I’ve worked on projects in real-time data analysis, personality-based recommendation systems, stock prediction, and more. I also have leadership experience with IEEE JHSB and development societies.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>Executive Committee Member & Social Media Lead — IEEE JHSB</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Harmony</h3>
+        <p>Depression and Schizophrenia prediction system.</p>
+      </div>
+      <div class="project-card">
+        <h3>YouTube Comment Insight</h3>
+        <p>Analyzed and visualized sentiment in YouTube comments.</p>
+      </div>
+      <div class="project-card">
+        <h3>Stock Price Predictor</h3>
+        <p>Machine learning model predicting stock trends in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech Computer Science & Engineering — Jamia Hamdard (7th Semester)</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    <p>© 2025 Ahad Nadeem</p>
+  </div>
+</body>
+</html>
