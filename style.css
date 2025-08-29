@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background Gradient */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* Sections */
+section {
+  padding: 50px 15%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* About */
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Experience */
+.experience ul {
+  list-style: none;
+}
+
+.experience li {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
